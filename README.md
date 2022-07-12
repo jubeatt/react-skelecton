@@ -2,7 +2,7 @@
 
 用 React 來實作「Skelecton（輪廓」」的效果，常出現在 Facebook、Youtube 等社群應用軟體，目的是提升使用者體驗。
 
-網站連結：
+網站連結：https://jubeatt.github.io/react-skelecton/
 
 ## 使用技術
 

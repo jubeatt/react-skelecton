@@ -1,0 +1,79 @@
+.skeleton {
+  background: #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.skeleton.title {
+  width: 50%;
+  height: 20px;
+}
+.skeleton.text {
+  width: 100%;
+  height: 12px;
+}
+.skeleton.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.skeleton.thumbnail {
+  width: 100%;
+  height: 100px;
+}
+
+.skeleton-wrapper {
+  position: relative;
+  margin: 20px auto;
+  padding: 10px 15px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.light .skeleton-wrapper {
+  background: #f2f2f2;
+}
+.dark .skeleton-wrapper {
+  background: #444;
+}
+.dark .skeleton-wrapper .skeleton {
+  background: #777;
+}
+.dark .skeleton-wrapper .skelecton-shim {
+  background: rgba(255, 255, 255, 0.05);
+}
+.skeleton-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.skeleton-profile > div:nth-child(2) {
+  flex: 1;
+}
+
+/* shim */
+.skelecton-shim-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: loading 2.5s infinite;
+}
+.skelecton-shim {
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.05);
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-150%);
+  }
+  50% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}

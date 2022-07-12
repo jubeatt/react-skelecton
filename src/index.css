@@ -1,13 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+button {
+  background: transparent;
+  border: 1px solid white;
+  font-size: 1em;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background: white;
+  color: dodgerblue;
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.header {
+  background: dodgerblue;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+.header .container {
+  display: flex;
+}
+.header h1 {
+  color: white;
+  margin: 0 auto 0 0;
+}
+.content .container {
+  display: flex;
+  gap: 80px;
+}
+.content h2 {
+  border-left: 6px solid dodgerblue;
+  padding-left: 10px;
+}
+.content .posts {
+  flex: 2;
+}
+.content .profile {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .content .container {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
+
+/* dark theme */
+body.dark {
+  background: #0a1929;
+}
+.dark h2,
+.dark h4,
+.dark p,
+.dark a {
+  color: #eee;
 }

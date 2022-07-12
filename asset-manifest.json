@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-skelecton/static/css/main.96a03fb4.css",
+    "main.js": "/react-skelecton/static/js/main.7ba478be.js",
+    "index.html": "/react-skelecton/index.html",
+    "main.96a03fb4.css.map": "/react-skelecton/static/css/main.96a03fb4.css.map",
+    "main.7ba478be.js.map": "/react-skelecton/static/js/main.7ba478be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96a03fb4.css",
+    "static/js/main.7ba478be.js"
+  ]
+}
